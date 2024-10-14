@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Nuevo" />
+                  <Button mnemonicParsing="false" text="Abrir" />
+                  <Button mnemonicParsing="false" text="Guardar" />
+                  <Button layoutX="104.0" layoutY="10.0" mnemonicParsing="false" text="Cerrar" />
+                  <Button mnemonicParsing="false" text="Cerrar todos" />
+                  <Separator orientation="VERTICAL" />
+                  <Button mnemonicParsing="false" text="Copiar" />
+                  <Button mnemonicParsing="false" text="Cortar" />
+                  <Button mnemonicParsing="false" text="Pegar" />
+                  <Button mnemonicParsing="false" text="Deshacer" />
+                  <Button mnemonicParsing="false" text="Rehacer" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
